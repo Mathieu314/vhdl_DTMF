@@ -5,7 +5,7 @@ entity pwm is port (
 	SIG_IN : in std_logic_vector(6 downto 0);
 	CLK : in std_logic;
 	RESET : in std_logic;
-	PWM_OUT : in std_logic
+	PWM_OUT : out std_logic
 );
 end entity pwm;
 

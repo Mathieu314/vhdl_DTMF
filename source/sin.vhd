@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity table_sin is port (
 	ADDRESS : in std_logic_vector(5 downto 0);
 	CLK : in std_logic;
-	SIN : in std_logic_vector(5 downto 0)
+	SIN : out std_logic_vector(5 downto 0)
 );
 end entity table_sin;
 
