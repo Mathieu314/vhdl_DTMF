@@ -29,7 +29,7 @@ begin
 			if (compteur < signalWidth) then
 				PWM_OUT <= '1';
 			else
-				PWM_OUT <= '0'
+				PWM_OUT <= '0';
 			end if;
 			if (compteur >= "1111100") then
 				compteur <= "0000000";
