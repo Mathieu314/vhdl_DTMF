@@ -6,7 +6,7 @@ entity table_sin is port (
 	CLK : in std_logic;
 	SIN : in std_logic_vector(5 downto 0)
 );
-end entity table;
+end entity table_sin;
 
 architecture behavioral of table_sin is
 
