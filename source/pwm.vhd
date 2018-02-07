@@ -18,7 +18,7 @@ architecture behavioral of pwm is
 begin
 	cycle: process(CLK, RESET)
 	begin
-		if (SIG_IN(6) = '0)' then
+		if (SIG_IN(6) = '0') then
 			signalWidth <= SIG_IN + "0111110";
 		else
 			signalWidth <= "0111110" - SIG_IN;
