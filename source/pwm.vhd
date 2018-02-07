@@ -1,5 +1,7 @@
 Library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity pwm is port (
 	SIG_IN : in std_logic_vector(6 downto 0);
@@ -35,4 +37,5 @@ begin
 				compteur <= compteur + 1;
 			end if;
 		end if;
+	end process cycle;
 end architecture behavioral;
