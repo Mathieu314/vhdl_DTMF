@@ -1,8 +1,7 @@
 Library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity sin_testbench is port (
-);
+entity sin_testbench is
 end entity sin_testbench;
 
 
@@ -10,13 +9,13 @@ architecture testbench of sin_testbench is
 	Signal CLK: std_logic;
 	Signal ADDR, S : std_logic_vector(5 downto 0);
 begin
-	T0: entity work.sin(behavioral) port map (ADDR, CLK, S);
+	T0: entity work.table_sin(behavioral) port map (ADDR, CLK, S);
 
-	colcked : process
+	clocked : process
 	begin
-		CLK <= "0";
+		CLK <= '0';
 		wait for 10 ns;
-		CLK <= "1"; 
+		CLK <= '1'; 
 		wait for 10 ns;
 	end process clocked;
 		

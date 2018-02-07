@@ -2,7 +2,7 @@ Library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity table_sin is port (
-	ADDRESSE : in std_logic_vector(5 downto 0);
+	ADDRESS : in std_logic_vector(5 downto 0);
 	CLK : in std_logic;
 	SIN : in std_logic_vector(5 downto 0)
 );
@@ -11,9 +11,9 @@ end entity table_sin;
 architecture behavioral of table_sin is
 
 begin
-	clock: process(ADRESSE)
+	clock: process(ADDRESS)
 	begin
-		case ADDRESSE is
+		case ADDRESS is
 			when "000000" => SIN <= "000000";
 			when "000001" => SIN <= "000001";
 			when "000010" => SIN <= "000011";
@@ -78,6 +78,7 @@ begin
 			when "111101" => SIN <= "100100";
 			when "111110" => SIN <= "100011";
 			when "111111" => SIN <= "100001";
+			when others => SIN <= "000000";
 		end case;
 	end process clock;
 end architecture behavioral;
