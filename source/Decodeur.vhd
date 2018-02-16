@@ -13,7 +13,7 @@ end entity;
 
 architecture a_Decodeur of Decodeur is
 Begin
-  Process
+  Process(enable, key)
    Begin
     if(enable='1' and key="0000")then -- 0
         F1 <= "011";
@@ -45,6 +45,9 @@ Begin
       elsif (enable='1' and key="1001") then -- 9
         F1 <= "010";
         F2 <= "111";
+      else
+      	F1 <= "XXX";
+	F2 <= "XXX";
       end if;
 end Process;
 end architecture;
