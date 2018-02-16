@@ -6,11 +6,12 @@ end entity sin_testbench;
 
 
 architecture testbench of sin_testbench is
-	Signal CLK: std_logic;
+	Signal CLK, RESET: std_logic;
 	Signal ADDR, S : std_logic_vector(5 downto 0);
 begin
-	T0: entity work.table_sin(behavioral) port map (ADDR, CLK, S);
-
+	T0: entity work.table_sin(behavioral) port map (ADDR, RESET, CLK, S);
+	
+	RESET <= '0';
 	clocked : process
 	begin
 		CLK <= '0';
