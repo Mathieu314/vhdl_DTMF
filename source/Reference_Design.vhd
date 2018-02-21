@@ -31,7 +31,7 @@ Begin
   
   IP_PS2: entity work.PS2_Ctrl(Plain_Wrong) port map (CLK, Reset, PS2_Clk, PS2_Data, DoRead, Scan_Err, Scan_DAV, data_in);
   Decode_Clavier: entity work.DecodeClavier(a_DecodeClavier) port map (Scan_Dav, Scan_Err, data_in, CLK, Reset, Key, Enable, DoRead);
-  IP_DTMF: entity work.IP_DTMF(behavioral√) port map (CLK, Reset, Key, Enable, DTMF_OUT);
+  IP_DTMF: entity work.IP_DTMF(behavioral) port map (CLK, Reset, Key, Enable, DTMF_OUT);
     
 end architecture behavioral; 
   
