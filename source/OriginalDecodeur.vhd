@@ -10,7 +10,7 @@ entity DecodeClavier is
     clk:in std_logic;
     reset:in std_logic;
     Key:out std_logic_vector(3 downto 0);
-    Enable:out std_logic_vector;
+    Enable:out std_logic;
     DoRead:out std_logic
   );
 end entity;
