@@ -32,7 +32,7 @@ begin
 	SinTable1 : entity work.table_sin(behavioral) port map (Addr1, RESET, CLK, Sin1);
 	SinTable2 : entity work.table_sin(behavioral) port map (Addr2, RESET, CLK, Sin2);
 
-	Additionneur : entity work.Additionneur(a_additionneur) port map (Sin1, Sin2, Sum)
+	Additionneur : entity work.Additionneur(a_additionneur) port map (Sin1, Sin2, Sum);
 
 	Pwm : entity work.pwm(behavioral) port map (Sum, CLK, RESET, DTMF_OUT);
 end architecture behavioral;
