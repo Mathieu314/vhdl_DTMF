@@ -23,5 +23,12 @@ begin
 
 	test : process
 	begin
+	  RESET <= '0';
+	  Scan_DAV <= '1';
+	  Scan_Err <= '0';
+	  data_in <= "01110000";
+	  wait for 40 ps;
+	  data_in <= "01110100";
+	  wait for 40 ps;
 	end process test;
 end architecture testbench;
