@@ -17,7 +17,6 @@ end entity;
 
 architecture a_DecodeClavier of DecodeClavier is
   signal compteur: std_logic;
-  signal
 Begin
   Process (clk, reset)
    Begin
