@@ -16,7 +16,7 @@ architecture behavioral of pwm is
 	Signal signalWidth : std_logic_vector(6 downto 0);
 
 begin
-	cycle: process(CLK, RESET)
+	cycle: process(CLK, RESET, SIG_IN)
 	begin
 		if (SIG_IN(6) = '0') then
 			signalWidth <= SIG_IN + "0111110";

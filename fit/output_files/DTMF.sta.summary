@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'CLK'
+Slack : -9.092
+TNS   : -345.449
+
+Type  : Setup 'PS2_Ctrl:IP_PS2|PS2_Clk_f'
+Slack : -2.095
+TNS   : -35.997
+
+Type  : Setup 'IP_DTMF:IP_DTMF|counter:CompteurBin2|tick'
+Slack : -0.971
+TNS   : -4.379
+
+Type  : Setup 'IP_DTMF:IP_DTMF|counter:CompteurBin1|tick'
+Slack : -0.925
+TNS   : -4.447
+
+Type  : Hold 'CLK'
+Slack : -1.378
+TNS   : -1.378
+
+Type  : Hold 'PS2_Ctrl:IP_PS2|PS2_Clk_f'
+Slack : 0.670
+TNS   : 0.000
+
+Type  : Hold 'IP_DTMF:IP_DTMF|counter:CompteurBin2|tick'
+Slack : 0.812
+TNS   : 0.000
+
+Type  : Hold 'IP_DTMF:IP_DTMF|counter:CompteurBin1|tick'
+Slack : 1.022
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLK'
+Slack : -1.155
+TNS   : -84.831
+
+Type  : Minimum Pulse Width 'PS2_Ctrl:IP_PS2|PS2_Clk_f'
+Slack : -0.734
+TNS   : -32.296
+
+Type  : Minimum Pulse Width 'IP_DTMF:IP_DTMF|counter:CompteurBin1|tick'
+Slack : -0.734
+TNS   : -8.808
+
+Type  : Minimum Pulse Width 'IP_DTMF:IP_DTMF|counter:CompteurBin2|tick'
+Slack : -0.734
+TNS   : -8.808
+
+------------------------------------------------------------

@@ -12,7 +12,7 @@ end entity table_sin;
 architecture behavioral of table_sin is
 
 begin
-	clock: process(ADDRESS)
+	clock: process(ADDRESS, RESET)
 	begin
 		if (RESET = '1') then
 			SIN <= "000000";
